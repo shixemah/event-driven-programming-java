@@ -1,0 +1,4 @@
+Listener A: name changed from null to Alice
+Listener B: noticed name is now Alice
+Listener A: name changed from Alice to Bob
+Listener B: noticed name is now Bob

@@ -1,0 +1,2 @@
+Legacy Display -> Temp: 26.0°C, Humidity: 60.0%
+Legacy Display -> Temp: 30.0°C, Humidity: 75.0%

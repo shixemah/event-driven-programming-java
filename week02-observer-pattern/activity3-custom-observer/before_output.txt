@@ -1,0 +1,4 @@
+Label shows: 10
+Bar chart height: 10
+Label shows: 20
+Bar chart height: 20

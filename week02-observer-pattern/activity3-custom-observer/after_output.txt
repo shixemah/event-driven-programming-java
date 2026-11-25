@@ -1,0 +1,9 @@
+Label shows: 10
+Bar chart height: 10
+LOG: value changed to 10
+Label shows: 20
+Bar chart height: 20
+LOG: value changed to 20
+Label shows: 30
+Bar chart height: 30
+LOG: value changed to 30
