@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.example</groupId>
+  <artifactId>week06-javafx</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-controls</artifactId>
+      <version>21</version>
+    </dependency>
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-fxml</artifactId>
+      <version>21</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-maven-plugin</artifactId>
+        <version>0.0.8</version>
+        <configuration>
+          <mainClass>com.example.App</mainClass>
+        </configuration>
+        <!--
+          Extra executions (not in the guide). The guide's "-Djavafx.mainClass=..." flag is ignored
+          when <mainClass> is set in the pom, so use these instead:
+            mvn clean javafx:run@layout      -> LayoutDemo   (Activity 2)
+            mvn clean javafx:run@fxml        -> FXMLApp      (Activity 4)
+            mvn clean javafx:run@dashboard   -> DashboardApp (Activity 5)
+          and plain "mvn clean javafx:run" runs App (Activity 1).
+        -->
+        <executions>
+          <execution>
+            <id>layout</id>
+            <configuration>
+              <mainClass>com.example.LayoutDemo</mainClass>
+            </configuration>
+          </execution>
+          <execution>
+            <id>fxml</id>
+            <configuration>
+              <mainClass>com.example.FXMLApp</mainClass>
+            </configuration>
+          </execution>
+          <execution>
+            <id>dashboard</id>
+            <configuration>
+              <mainClass>com.example.DashboardApp</mainClass>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

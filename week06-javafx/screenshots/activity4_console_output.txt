@@ -1,0 +1,5 @@
+Error: Fields cannot be empty.
+Attempting login for: admin
+Login Successful!
+Attempting login for: user
+Login Failed!
