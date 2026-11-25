@@ -1,0 +1,7 @@
+Query "g" -> 4 match(es)
+Query "gr" -> 2 match(es)
+Query "gra" -> 2 match(es)
+Query "" -> 15 match(es)
+Query "p" -> 7 match(es)
+Query "pe" -> 4 match(es)
+Query "pea" -> 2 match(es)

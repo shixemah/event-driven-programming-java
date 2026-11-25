@@ -1,0 +1,3 @@
+Command: Add
+Command: Subtract
+Command: Reset

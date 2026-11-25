@@ -1,0 +1,4 @@
+Style 1: Named class listener fired!
+Style 2: Anonymous inner class fired!
+Style 3: Lambda expression fired!
+Style 4: Method reference fired!
