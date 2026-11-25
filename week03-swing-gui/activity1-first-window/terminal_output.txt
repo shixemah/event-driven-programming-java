@@ -1,0 +1,2 @@
+Picked up JAVA_TOOL_OPTIONS: -XX:+IgnoreUnrecognizedVMOptions -XX:-UseBASE64Intrinsics
+Window created on thread: AWT-EventQueue-0

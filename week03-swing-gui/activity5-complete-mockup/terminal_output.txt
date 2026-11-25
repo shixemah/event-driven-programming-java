@@ -1,0 +1,2 @@
+Picked up JAVA_TOOL_OPTIONS: -XX:+IgnoreUnrecognizedVMOptions -XX:-UseBASE64Intrinsics
+Mockup running on: AWT-EventQueue-0

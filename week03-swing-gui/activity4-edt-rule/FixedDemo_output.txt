@@ -1,0 +1,4 @@
+Picked up JAVA_TOOL_OPTIONS: -XX:+IgnoreUnrecognizedVMOptions -XX:-UseBASE64Intrinsics
+Handler running on: AWT-EventQueue-0
+Long work running on: Thread-0
+GUI updated on: AWT-EventQueue-0
