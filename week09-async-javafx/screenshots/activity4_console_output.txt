@@ -1,0 +1,5 @@
+[before]  Button 'Sync Data' disabled=false;  Button 'Cancel' disabled=true;  Spinner visible=false;  Label 'Ready';
+[syncing]  Button 'Sync Data' disabled=true;  Button 'Cancel' disabled=false;  Spinner visible=true;  Label 'Syncing...';
+[cancelled]  Button 'Sync Data' disabled=false;  Button 'Cancel' disabled=true;  Spinner visible=false;  Label 'Sync Cancelled.';
+[restarted]  Button 'Sync Data' disabled=true;  Button 'Cancel' disabled=false;  Spinner visible=true;  Label 'Syncing...';
+[finished]  Button 'Sync Data' disabled=false;  Button 'Cancel' disabled=true;  Spinner visible=false;  Label 'Data Synced Successfully!';

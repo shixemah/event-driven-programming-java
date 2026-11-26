@@ -1,0 +1,6 @@
+[before]  Button 'Start Background Task' disabled=false;  Label 'Ready';
+call() running on: Thread-3
+[UI_thread_during_TaskDemo] FX thread answered after 0 ms
+[during]  Button 'Start Background Task' disabled=true;  Label 'Processing...';
+setOnSucceeded running on: JavaFX Application Thread
+[after]  Button 'Start Background Task' disabled=false;  Label 'Task Complete!';

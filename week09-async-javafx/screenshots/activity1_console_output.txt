@@ -1,0 +1,4 @@
+[before]  Button 'Freeze the UI!' disabled=false;  Label 'Ready';
+Handler running on: JavaFX Application Thread
+[UI_thread_during_FreezeDemo] FX thread answered after 2682 ms
+[after]  Button 'Freeze the UI!' disabled=false;  Label 'Done!';

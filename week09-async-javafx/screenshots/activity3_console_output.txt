@@ -1,0 +1,5 @@
+[before]  Button 'Download File' disabled=false;  ProgressBar=0.00;  Label 'Ready';
+[at_1.5s]  Button 'Download File' disabled=true;  ProgressBar=0.38;  Label 'Downloading... 38%';
+[at_3s]  Button 'Download File' disabled=true;  ProgressBar=0.84;  Label 'Downloading... 84%';
+[finished]  Button 'Download File' disabled=false;  ProgressBar=1.00;  Label 'Download Complete!';
+[second_run_started]  Button 'Download File' disabled=true;  ProgressBar=0.24;  Label 'Downloading... 24%';

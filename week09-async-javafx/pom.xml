@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.example</groupId>
+  <artifactId>week09-async-javafx</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-controls</artifactId>
+      <version>21</version>
+    </dependency>
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-fxml</artifactId>
+      <version>21</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-maven-plugin</artifactId>
+        <version>0.0.8</version>
+        <configuration>
+          <mainClass>com.example.FreezeDemo</mainClass>
+        </configuration>
+        <!--
+          Named executions, one per activity:
+            mvn clean javafx:run            -> Activity 1  FreezeDemo (the bad way)
+            mvn clean javafx:run@task       -> Activity 2  TaskDemo (the fix)
+            mvn clean javafx:run@progress   -> Activity 3  ProgressDemo
+            mvn clean javafx:run@service    -> Activity 4  ServiceDemo
+        -->
+        <executions>
+          <execution>
+            <id>task</id>
+            <configuration>
+              <mainClass>com.example.TaskDemo</mainClass>
+            </configuration>
+          </execution>
+          <execution>
+            <id>progress</id>
+            <configuration>
+              <mainClass>com.example.ProgressDemo</mainClass>
+            </configuration>
+          </execution>
+          <execution>
+            <id>service</id>
+            <configuration>
+              <mainClass>com.example.ServiceDemo</mainClass>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
