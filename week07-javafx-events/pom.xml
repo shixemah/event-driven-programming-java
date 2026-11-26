@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.example</groupId>
+  <artifactId>week07-javafx-events</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-controls</artifactId>
+      <version>21</version>
+    </dependency>
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-fxml</artifactId>
+      <version>21</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-maven-plugin</artifactId>
+        <version>0.0.8</version>
+        <configuration>
+          <mainClass>com.example.EventPropagationDemo</mainClass>
+        </configuration>
+        <!--
+          Named executions, one per activity:
+            mvn clean javafx:run              -> Activity 1  EventPropagationDemo (Button, as in the guide)
+            mvn clean javafx:run@label        -> Activity 1  EventPropagationLabelDemo (shows all 3 phases)
+            mvn clean javafx:run@mousekey     -> Activity 2  MouseKeyDemo
+            mvn clean javafx:run@dragdrop     -> Activity 3  DragDropDemo
+            mvn clean javafx:run@customevent  -> Activity 4  CustomEventDemo
+        -->
+        <executions>
+          <execution>
+            <id>label</id>
+            <configuration>
+              <mainClass>com.example.EventPropagationLabelDemo</mainClass>
+            </configuration>
+          </execution>
+          <execution>
+            <id>mousekey</id>
+            <configuration>
+              <mainClass>com.example.MouseKeyDemo</mainClass>
+            </configuration>
+          </execution>
+          <execution>
+            <id>dragdrop</id>
+            <configuration>
+              <mainClass>com.example.DragDropDemo</mainClass>
+            </configuration>
+          </execution>
+          <execution>
+            <id>customevent</id>
+            <configuration>
+              <mainClass>com.example.CustomEventDemo</mainClass>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

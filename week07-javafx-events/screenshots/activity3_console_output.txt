@@ -1,0 +1,3 @@
+Drag detected: Drag Me 📦
+Drag entered the drop zone (zone turns green)
+Dropped: Drag Me 📦

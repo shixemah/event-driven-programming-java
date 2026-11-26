@@ -1,0 +1,5 @@
+Key RIGHT -> circle at (265.0, 200.0)
+Key RIGHT -> circle at (280.0, 200.0)
+Key DOWN -> circle at (280.0, 215.0)
+Key DOWN -> circle at (280.0, 230.0)
+Key DOWN -> circle at (280.0, 245.0)

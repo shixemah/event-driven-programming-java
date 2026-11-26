@@ -1,0 +1,2 @@
+1. [FILTER] Root intercepted the click!
+2. [HANDLER] Button was clicked!
