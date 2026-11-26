@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.example</groupId>
+  <artifactId>week08-javafx-bindings</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-controls</artifactId>
+      <version>21</version>
+    </dependency>
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-fxml</artifactId>
+      <version>21</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-maven-plugin</artifactId>
+        <version>0.0.8</version>
+        <configuration>
+          <mainClass>com.example.ListenerDemo</mainClass>
+        </configuration>
+        <!--
+          Named executions, one per activity:
+            mvn clean javafx:run                -> Activity 2  ListenerDemo (console output only)
+            mvn clean javafx:run@unidirectional -> Activity 3  UnidirectionalDemo
+            mvn clean javafx:run@bidirectional  -> Activity 4  BidirectionalDemo
+            mvn clean javafx:run@form           -> Activity 5  ReactiveFormApp
+          (Activity 1, Person.java, is just the model class and has no main method.)
+        -->
+        <executions>
+          <execution>
+            <id>unidirectional</id>
+            <configuration>
+              <mainClass>com.example.UnidirectionalDemo</mainClass>
+            </configuration>
+          </execution>
+          <execution>
+            <id>bidirectional</id>
+            <configuration>
+              <mainClass>com.example.BidirectionalDemo</mainClass>
+            </configuration>
+          </execution>
+          <execution>
+            <id>form</id>
+            <configuration>
+              <mainClass>com.example.ReactiveFormApp</mainClass>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

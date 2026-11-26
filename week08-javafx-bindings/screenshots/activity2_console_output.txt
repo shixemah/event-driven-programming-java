@@ -1,0 +1,9 @@
+--- Setting name to Alice ---
+1. [InvalidationListener] Name was changed!
+2. [ChangeListener] Name changed from '' to 'Alice'
+
+--- Setting name to Bob ---
+1. [InvalidationListener] Name was changed!
+2. [ChangeListener] Name changed from 'Alice' to 'Bob'
+
+--- Setting name to Bob (same value) ---

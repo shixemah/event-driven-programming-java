@@ -1,0 +1,12 @@
+[start]
+  Label 'Drag the slider or type a number:'
+  Slider value=50.0
+  TextField text='50'
+[after_slider_to_80]
+  Label 'Drag the slider or type a number:'
+  Slider value=80.0
+  TextField text='80'
+[after_typing_20]
+  Label 'Drag the slider or type a number:'
+  Slider value=20.0
+  TextField text='20'

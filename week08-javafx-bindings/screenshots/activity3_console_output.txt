@@ -1,0 +1,7 @@
+[start]
+  TextField text=''
+  Label ', welcome!'
+[typed_Emmanuel]
+  TextField text='Emmanuel'
+  Label 'Emmanuel, welcome!'
+setText on bound label threw: java.lang.RuntimeException: Label.text : A bound value cannot be set.

@@ -1,0 +1,42 @@
+[1_start]
+  TextField text=''
+  TextField text=''
+  TextArea text=''
+  Label '0 / 150 characters'
+  Label 'Hi, I am . '
+  Button 'Submit Registration' disabled=true
+[2_name_only]
+  TextField text='Emmanuel'
+  TextField text=''
+  TextArea text=''
+  Label '0 / 150 characters'
+  Label 'Hi, I am Emmanuel. '
+  Button 'Submit Registration' disabled=true
+[3_email_without_at]
+  TextField text='Emmanuel'
+  TextField text='emmanuel.example.com'
+  TextArea text=''
+  Label '0 / 150 characters'
+  Label 'Hi, I am Emmanuel. '
+  Button 'Submit Registration' disabled=true
+[4_valid]
+  TextField text='Emmanuel'
+  TextField text='emmanuel@example.com'
+  TextArea text='I study computer science.'
+  Label '25 / 150 characters'
+  Label 'Hi, I am Emmanuel. I study computer science.'
+  Button 'Submit Registration' disabled=false
+[5_bio_151_chars]
+  TextField text='Emmanuel'
+  TextField text='emmanuel@example.com'
+  TextArea text='xxxx... (151 x chars)'
+  Label '151 / 150 characters'
+  Label 'Hi, I am Emmanuel. xxxx...'
+  Button 'Submit Registration' disabled=true
+[6_bio_short_again]
+  TextField text='Emmanuel'
+  TextField text='emmanuel@example.com'
+  TextArea text='Short bio.'
+  Label '10 / 150 characters'
+  Label 'Hi, I am Emmanuel. Short bio.'
+  Button 'Submit Registration' disabled=false
