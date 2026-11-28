@@ -1,0 +1,4 @@
+[D_db_down_on_load]
+   Status: 'Could not load students: Could not connect to address=(host=localhost)(port=3306)(type=master) : Socket fail to connect to host:localhost, port:3306. Connection refused (connect failed)'  color=0xff0000ff
+[E_db_down_on_save]
+   Status: 'Could not save student: Could not connect to address=(host=localhost)(port=3306)(type=master) : Socket fail to connect to host:localhost, port:3306. Connection refused (connect failed)'  color=0xff0000ff
